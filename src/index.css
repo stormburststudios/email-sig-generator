@@ -1,0 +1,34 @@
+/*@tailwind base;*/
+/* Disabled base otherwise it adds a shit load of css variables to the generated HTML and mail won't accept the sig as it becomes too large */
+@tailwind components;
+@tailwind utilities;
+@tailwind forms;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.field {
+  outline: none;
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.help {
+  text-decoration: none;
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgb(79 70 229);
+  display: block;
+}
