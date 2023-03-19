@@ -175,7 +175,7 @@ function App() {
                   />
                 </div>
 
-                <div className="col-span-6 sm:col-span-2 lg:col-span-3">
+                <div className="col-span-6 sm:col-span-6 lg:col-span-3">
                   <label htmlFor="company-website" className="block text-sm font-medium text-gray-700">
                     Phone
                   </label>
@@ -188,12 +188,13 @@ function App() {
                         name="mobile"
                         id="mobile"
                         className="field block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                        placeholder="7947563882"
+                        placeholder="3308 08 3310"
                         autoComplete="tel-local"
                         value={mobile}
                         onChange={({target}) => setMobile(target.value)}
                     />
                   </div>
+                  <p className="font-medium text-gray-500 text-sm" style={{ fontStyle: 'italic' }}>Leave this empty to use the company number</p>
                 </div>
               </div>
             </div>

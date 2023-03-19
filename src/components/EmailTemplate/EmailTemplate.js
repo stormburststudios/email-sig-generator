@@ -5,7 +5,7 @@ export const EmailTemplate = ({
         email = 'john.doe@oneupsales.co.uk',
         position = 'Head of Doe',
         linkedIn = 'https://linkedin.com',
-        mobile = '798 574 3223',
+        mobile = '3308 08 3310',
     }) => {
         const fallback = (str, fallback) => str === null ? fallback : str.length === 0 ? fallback : str;
         return (
@@ -96,12 +96,16 @@ export const EmailTemplate = ({
                                             </tbody>
                                         </table>
                                     </td>
-                                    <td style={{ padding: '0px', color: 'rgb(0, 0, 0)' }}><a href={`tel:${fallback(mobile, '798 574 3223')}`}
-                                                                                             color="#000000" style={{
-                                        color: 'rgb(0, 0, 0)',
-                                        fontSize: '12px',
-                                        textDecoration: 'none',
-                                    }} target="_blank" rel="noreferrer">+44 {fallback(mobile, '798 574 3223')}</a></td>
+                                    <td style={{ padding: '0px', color: 'rgb(0, 0, 0)' }}>
+                                        <a href={`tel:${fallback(mobile, '330 80 83310')}`}
+                                           color="#000000" style={{
+                                               color: 'rgb(0, 0, 0)',
+                                            fontSize: '12px',
+                                            textDecoration: 'none',
+                                        }} target="_blank" rel="noreferrer">
+                                            +44 {fallback(mobile, '330 80 83310')}
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr height={25} style={{ verticalAlign: 'middle' }}>
                                     <td width={30} style={{ verticalAlign: 'middle' }}>
